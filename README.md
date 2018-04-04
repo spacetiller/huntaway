@@ -1,28 +1,45 @@
 # Huntaway (Warining: Stop maintenance. Only for tutorial.)
 A twemproxy edition for redis cluster, revised on Twemproxy v2.4.0. Extensions include RW seperation, Hot/Cold data, and failover, etc.
-ÕâÊÇ2013Äê×öµÄÒ»¸öTwemproxy¸Ä°æ£¬ÎªÁËÊµÏÖredis¼¯Èº£¬µ±Ê±3.0»¹Ã»³öÀ´£¬³õ²½ÊµÏÖÁËRedisµÄ¼¯Èº¹¦ÄÜ£¬
+è¿™æ˜¯2013å¹´åšçš„ä¸€ä¸ªTwemproxyæ”¹ç‰ˆï¼Œä¸ºäº†å®žçŽ°redisé›†ç¾¤ï¼Œå½“æ—¶3.0è¿˜æ²¡å‡ºæ¥ï¼Œåˆæ­¥å®žçŽ°äº†Redisçš„é›†ç¾¤åŠŸèƒ½ï¼Œ
 
-Twemproxy ÓÖ³Æ nutcracker £¬ÊÇÒ»¸ömemcache¡¢redisÐ­ÒéµÄÇáÁ¿¼¶´úÀí£¬Ò»¸öÓÃÓÚsharding µÄÖÐ¼ä¼þ¡£ÓÐÁËTwemproxy£¬¿Í»§¶Ë²»Ö±½Ó·ÃÎÊRedis·þÎñÆ÷£¬¶øÊÇÍ¨¹ýtwemproxy ´úÀíÖÐ¼ä¼þ¼ä½Ó·ÃÎÊ¡£ twemproxy Îª twitter ¿ªÔ´²úÆ·, Ä¿Ç°°æ±¾¿ÉÒÔ²é¿´ [ÕâÀï]()
+Twemproxy åˆç§° nutcracker ï¼Œæ˜¯ä¸€ä¸ªmemcacheã€redisåè®®çš„è½»é‡çº§ä»£ç†ï¼Œä¸€ä¸ªç”¨äºŽsharding çš„ä¸­é—´ä»¶ã€‚æœ‰äº†Twemproxyï¼Œå®¢æˆ·ç«¯ä¸ç›´æŽ¥è®¿é—®RedisæœåŠ¡å™¨ï¼Œè€Œæ˜¯é€šè¿‡twemproxy ä»£ç†ä¸­é—´ä»¶é—´æŽ¥è®¿é—®ã€‚ twemproxy ä¸º twitter å¼€æºäº§å“, ç›®å‰ç‰ˆæœ¬å¯ä»¥æŸ¥çœ‹ [è¿™é‡Œ]()
 
-Redis ÊÇÒ»¸ö¿ªÔ´£¨BSDÐí¿É£©µÄ£¬ÄÚ´æÖÐµÄÊý¾Ý½á¹¹´æ´¢ÏµÍ³£¬Ëü¿ÉÒÔÓÃ×÷Êý¾Ý¿â¡¢»º´æºÍÏûÏ¢ÖÐ¼ä¼þ¡£ ËüÖ§³Ö¶àÖÖÀàÐÍµÄÊý¾Ý½á¹¹£¬Èç ×Ö·û´®£¨strings£©£¬ É¢ÁÐ£¨hashes£©£¬ ÁÐ±í£¨lists£©£¬ ¼¯ºÏ£¨sets£©£¬ ÓÐÐò¼¯ºÏ£¨sorted sets£© Óë·¶Î§²éÑ¯£¬ bitmaps£¬ hyperloglogs ºÍ µØÀí¿Õ¼ä£¨geospatial£© Ë÷Òý°ë¾¶²éÑ¯¡£ Redis ÄÚÖÃÁË ¸´ÖÆ£¨replication£©£¬LUA½Å±¾£¨Lua scripting£©£¬ LRUÇý¶¯ÊÂ¼þ£¨LRU eviction£©£¬ÊÂÎñ£¨transactions£© ºÍ²»Í¬¼¶±ðµÄ ´ÅÅÌ³Ö¾Ã»¯£¨persistence£©£¬ ²¢Í¨¹ý RedisÉÚ±ø£¨Sentinel£©ºÍ×Ô¶¯ ·ÖÇø£¨Cluster£©Ìá¹©¸ß¿ÉÓÃÐÔ£¨high availability£©¡£
+Redis æ˜¯ä¸€ä¸ªå¼€æºï¼ˆBSDè®¸å¯ï¼‰çš„ï¼Œå†…å­˜ä¸­çš„æ•°æ®ç»“æž„å­˜å‚¨ç³»ç»Ÿï¼Œå®ƒå¯ä»¥ç”¨ä½œæ•°æ®åº“ã€ç¼“å­˜å’Œæ¶ˆæ¯ä¸­é—´ä»¶ã€‚ å®ƒæ”¯æŒå¤šç§ç±»åž‹çš„æ•°æ®ç»“æž„ï¼Œå¦‚ å­—ç¬¦ä¸²ï¼ˆstringsï¼‰ï¼Œ æ•£åˆ—ï¼ˆhashesï¼‰ï¼Œ åˆ—è¡¨ï¼ˆlistsï¼‰ï¼Œ é›†åˆï¼ˆsetsï¼‰ï¼Œ æœ‰åºé›†åˆï¼ˆsorted setsï¼‰ ä¸ŽèŒƒå›´æŸ¥è¯¢ï¼Œ bitmapsï¼Œ hyperloglogs å’Œ åœ°ç†ç©ºé—´ï¼ˆgeospatialï¼‰ ç´¢å¼•åŠå¾„æŸ¥è¯¢ã€‚ Redis å†…ç½®äº† å¤åˆ¶ï¼ˆreplicationï¼‰ï¼ŒLUAè„šæœ¬ï¼ˆLua scriptingï¼‰ï¼Œ LRUé©±åŠ¨äº‹ä»¶ï¼ˆLRU evictionï¼‰ï¼Œäº‹åŠ¡ï¼ˆtransactionsï¼‰ å’Œä¸åŒçº§åˆ«çš„ ç£ç›˜æŒä¹…åŒ–ï¼ˆpersistenceï¼‰ï¼Œ å¹¶é€šè¿‡ Rediså“¨å…µï¼ˆSentinelï¼‰å’Œè‡ªåŠ¨ åˆ†åŒºï¼ˆClusterï¼‰æä¾›é«˜å¯ç”¨æ€§ï¼ˆhigh availabilityï¼‰ã€‚
 
-2013-12-03£º NutCrackerÐÞ¸Ä³õ²½Ë¼Â·£»
-ÔÚ·þÎñÆ÷³ØÖÐÒýÈë×éµÄ¸ÅÄî£¬ÔÚnc_serverÖÐÔö¼Ógroup(>=0)£¬0±íÊ¾Ã»ÓÐ×é£¬Îª¶ÀÁ¢·þÎñÆ÷£¬ÏàÍ¬×éºÅµÄ·þÎñÆ÷×÷ÎªÒ»¸öµ¥Î»À´¾ºÑ¡NCµÄ²Ù×÷£»
-¼ÙÉèmÎª·þÎñÆ÷³ØÖÐËùÓÐ·þÎñÆ÷µÄÊýÁ¿£¬ÔòÒ»¸ö×éÖÐ°üº¬·þÎñÆ÷ÊýÁ¿nÎª1~m¸ö£»
-×éÖÐµÄ·þÎñÆ÷±£´æÏàÍ¬µÄÊý¾Ý¡£
-Ð´²Ù×÷£ºÊ¹NCÄÜ¹»±æÈÏ·þÎñÆ÷×é£¬²¢Ïò×éÖÐµÄÖ÷·þÎñÆ÷Ð´Êý¾Ý£»£¨ÈçºÎ±£Ö¤×éÖÐ·þÎñÆ÷Êý¾ÝÍ¬²½£¿£©
-¶Á²Ù×÷µÄNCÖ÷ÒªÕë¶Ôslave redis£¬¿ÉÒÔÔÚÄ¬ÈÏÖµÏÂ£¨×÷Îª¶ÀÁ¢·þÎñÆ÷£©½øÐÐ¶Á²Ù×÷£»
-ÐÞ¸ÄÅäÖÃÎÄ¼þ£¬Ê¹¶à¸ö·þÎñÆ÷±àÎªÒ»×é£»
-å´»ú£ºÔÚ×é·þÎñÆ÷µÄ»ù´¡ÉÏ£¬Èç¹û×éÖÐ¶à¸ö·þÎñÆ÷ÖÐµÄ×î¶àn-1¸ö·þÎñÆ÷å´»ú£¬NC»á½«µÚÒ»¸ö£¨»ò»º´æµÄ£©¸¨Öú·þÎñÆ÷×÷ÎªÖ÷·þÎñÆ÷¡£
-¹ý³Ì£º
-ÐÞ¸Ä´òÓ¡Ö®ºó²»Æð×÷ÓÃ£¬·¢ÏÖnutcrackerÃüÁîÊ¹ÓÃÁË/usr/local/sbinÖÐµÄ¾ÉÎÄ¼þ£¬¶ø²»ÊÇ/usr/local/binÏÂÃæµÄ£»
+2013-12-03ï¼š NutCrackerä¿®æ”¹åˆæ­¥æ€è·¯ï¼›
 
->	Warning£ºNC¶Ôclient¶ËÐèÒª·µ»Ø×´Ì¬£¬´ÓRedis Server·µ»Ø£¬Í¨¹ýNCµ½client£¬ÕâÒ²¾ÍÊÇNCÎÞ·¨ÊµÏÖselectµÄÔ­Òò£¬ÏêÏ¸¿´´úÂë¡£
->	ÔÚÅäÖÃÎÄ¼þÖÐ£¬·þÎñÆ÷Ìí¼Ó×éÊ¶±ðÓò£¬±ä³ÉÖîÈç£º10.0.2.70:8604:1|1:1:m£¬×îºóµÄÈý¸ö·ûºÅ·Ö±ðÊÇ£º×éºÅ¡¢×éÈ¨ÖØºÍ×é¶ÁÐ´±êÖ¾¡£
-½á¹û£ºÎÞ·¨½âÎö£¬nutcracker±¨´íÍ£Ö¹¡£ÐÞ¸Ä£¬OK¡£
->	·þÎñÆ÷ÉèÖÃÔÚconf_handlerº¯ÊýÖÐ£¬Õâ¸öº¯Êý»á¶ÔµÃµ½µÄkey:value¶Ô½øÐÐÉ¨Ãè£¬È»ºóÓë³£Á¿ÃüÁî×éconf_commandsÖÐµÄ¹Ø¼ü×Ö½øÐÐ¶ÔÕÕ£¬·ûºÏÔòÖ´ÐÐ¶ÔÓ¦µÄÉèÖÃº¯Êý£¬±ÈÈç¶Ô·þÎñÆ÷¾ÍÊÇconf_add_server ()£¬Õâ¸öº¯Êý½âÎö³öIP¡¢PortµÈ²ÎÊý£¬·ÅÔÚstruct sockinfo{ int family; socklen_t addrlen; union { struct sockaddr_in in¡­}addr }½á¹¹ÌåÖÐ£»
->	Nc_conf.c£ºÕÒµ½ÅäÖÃµÄ¹Ø¼ü£º
-conf_add_server():delim[]£¬ÐÞ¸Ädelim[] = ¡° :::¡±£¬È»ºóÔÚ¶ÔdelimµÄÑ­»·ÖÐ£¬Ìí¼Ó¶Ô×îºóÒ»¸ö¡°:¡±µÄ´¦Àí£¬²¢±äÎª¿ÉÑ¡¡£
->	Nc_server.h£ºÔÚstruct serverÖÐÔö¼ÓÊôÐÔ£ºuint32_t gid£»
->	Nc_server.c£ºÔÚÅäÖÃµ¥¸ö·þÎñÆ÷µÄº¯Êýconf_server_each_transform()ÖÐ£¬´Óconf_serverÖÐ½«group¸³Öµ¸øserver->gid¡£
->	·Ö·¢¹ý³Ì£ºNC³õÊ¼»¯Ö®ºó£¬ÏÈÔÚ½ÓÊÕÊÂ¼þ¹ÒÔØproxy_recv£¬ÕæÕý½Óµ½ÏûÏ¢ÇëÇóºó£¬ÔÚproxy_recvÖÐ¹ÒÔØÕæÕýµÄÏûÏ¢½ÓÊÕ¡¢·¢Éúº¯Êý£¨conn_getº¯ÊýÖÐ£©£»  ÇëÇóµÄ·Ö·¢ÔÚÏûÏ¢½ÓÊÕº¯ÊýÖÐ£¬ÓÐ¸öserver_pool_serverº¯Êý£¬ÔÚÒ»¸öserver poolÖÐÑ¡ÔñÒ»¸öserverÀ´·Ö·¢£¬ºËÐÄµÄÂ·ÓÉ»úÖÆºÜ¿ÉÄÜ»áÔÚÕâÀïÐÞ¸Ä¡£
+åœ¨æœåŠ¡å™¨æ± ä¸­å¼•å…¥ç»„çš„æ¦‚å¿µï¼Œåœ¨nc_serverä¸­å¢žåŠ group(>=0)ï¼Œ0è¡¨ç¤ºæ²¡æœ‰ç»„ï¼Œä¸ºç‹¬ç«‹æœåŠ¡å™¨ï¼Œç›¸åŒç»„å·çš„æœåŠ¡å™¨ä½œä¸ºä¸€ä¸ªå•ä½æ¥ç«žé€‰NCçš„æ“ä½œï¼›
+
+å‡è®¾mä¸ºæœåŠ¡å™¨æ± ä¸­æ‰€æœ‰æœåŠ¡å™¨çš„æ•°é‡ï¼Œåˆ™ä¸€ä¸ªç»„ä¸­åŒ…å«æœåŠ¡å™¨æ•°é‡nä¸º1~mä¸ªï¼›
+
+ç»„ä¸­çš„æœåŠ¡å™¨ä¿å­˜ç›¸åŒçš„æ•°æ®ã€‚
+
+å†™æ“ä½œï¼šä½¿NCèƒ½å¤Ÿè¾¨è®¤æœåŠ¡å™¨ç»„ï¼Œå¹¶å‘ç»„ä¸­çš„ä¸»æœåŠ¡å™¨å†™æ•°æ®ï¼›ï¼ˆå¦‚ä½•ä¿è¯ç»„ä¸­æœåŠ¡å™¨æ•°æ®åŒæ­¥ï¼Ÿï¼‰
+
+è¯»æ“ä½œçš„NCä¸»è¦é’ˆå¯¹slave redisï¼Œå¯ä»¥åœ¨é»˜è®¤å€¼ä¸‹ï¼ˆä½œä¸ºç‹¬ç«‹æœåŠ¡å™¨ï¼‰è¿›è¡Œè¯»æ“ä½œï¼›
+
+ä¿®æ”¹é…ç½®æ–‡ä»¶ï¼Œä½¿å¤šä¸ªæœåŠ¡å™¨ç¼–ä¸ºä¸€ç»„ï¼›
+
+å®•æœºï¼šåœ¨ç»„æœåŠ¡å™¨çš„åŸºç¡€ä¸Šï¼Œå¦‚æžœç»„ä¸­å¤šä¸ªæœåŠ¡å™¨ä¸­çš„æœ€å¤šn-1ä¸ªæœåŠ¡å™¨å®•æœºï¼ŒNCä¼šå°†ç¬¬ä¸€ä¸ªï¼ˆæˆ–ç¼“å­˜çš„ï¼‰è¾…åŠ©æœåŠ¡å™¨ä½œä¸ºä¸»æœåŠ¡å™¨ã€‚
+
+è¿‡ç¨‹ï¼š
+ä¿®æ”¹æ‰“å°ä¹‹åŽä¸èµ·ä½œç”¨ï¼Œå‘çŽ°nutcrackerå‘½ä»¤ä½¿ç”¨äº†/usr/local/sbinä¸­çš„æ—§æ–‡ä»¶ï¼Œè€Œä¸æ˜¯/usr/local/binä¸‹é¢çš„ï¼›
+
+
+>	NCå¯¹clientç«¯éœ€è¦è¿”å›žçŠ¶æ€ï¼Œä»ŽRedis Serverè¿”å›žï¼Œé€šè¿‡NCåˆ°clientï¼Œè¿™ä¹Ÿå°±æ˜¯NCæ— æ³•å®žçŽ°selectçš„åŽŸå› ï¼Œè¯¦ç»†çœ‹ä»£ç ã€‚
+
+>	åœ¨é…ç½®æ–‡ä»¶ä¸­ï¼ŒæœåŠ¡å™¨æ·»åŠ ç»„è¯†åˆ«åŸŸï¼Œå˜æˆè¯¸å¦‚ï¼š10.0.2.70:8604:1|1:1:mï¼Œæœ€åŽçš„ä¸‰ä¸ªç¬¦å·åˆ†åˆ«æ˜¯ï¼šç»„å·ã€ç»„æƒé‡å’Œç»„è¯»å†™æ ‡å¿—ã€‚
+ç»“æžœï¼šæ— æ³•è§£æžï¼ŒnutcrackeræŠ¥é”™åœæ­¢ã€‚ä¿®æ”¹ï¼ŒOKã€‚
+
+>	æœåŠ¡å™¨è®¾ç½®åœ¨conf_handlerå‡½æ•°ä¸­ï¼Œè¿™ä¸ªå‡½æ•°ä¼šå¯¹å¾—åˆ°çš„key:valueå¯¹è¿›è¡Œæ‰«æï¼Œç„¶åŽä¸Žå¸¸é‡å‘½ä»¤ç»„conf_commandsä¸­çš„å…³é”®å­—è¿›è¡Œå¯¹ç…§ï¼Œç¬¦åˆåˆ™æ‰§è¡Œå¯¹åº”çš„è®¾ç½®å‡½æ•°ï¼Œæ¯”å¦‚å¯¹æœåŠ¡å™¨å°±æ˜¯conf_add_server ()ï¼Œè¿™ä¸ªå‡½æ•°è§£æžå‡ºIPã€Portç­‰å‚æ•°ï¼Œæ”¾åœ¨struct sockinfo{ int family; socklen_t addrlen; union { struct sockaddr_in inâ€¦}addr }ç»“æž„ä½“ä¸­ï¼›
+
+>	Nc_conf.cï¼šæ‰¾åˆ°é…ç½®çš„å…³é”®ï¼š
+conf_add_server():delim[]ï¼Œä¿®æ”¹delim[] = â€œ :::â€ï¼Œç„¶åŽåœ¨å¯¹delimçš„å¾ªçŽ¯ä¸­ï¼Œæ·»åŠ å¯¹æœ€åŽä¸€ä¸ªâ€œ:â€çš„å¤„ç†ï¼Œå¹¶å˜ä¸ºå¯é€‰ã€‚
+
+>	Nc_server.hï¼šåœ¨struct serverä¸­å¢žåŠ å±žæ€§ï¼šuint32_t gidï¼›
+
+>	Nc_server.cï¼šåœ¨é…ç½®å•ä¸ªæœåŠ¡å™¨çš„å‡½æ•°conf_server_each_transform()ä¸­ï¼Œä»Žconf_serverä¸­å°†groupèµ‹å€¼ç»™server->gidã€‚
+
+>	åˆ†å‘è¿‡ç¨‹ï¼šNCåˆå§‹åŒ–ä¹‹åŽï¼Œå…ˆåœ¨æŽ¥æ”¶äº‹ä»¶æŒ‚è½½proxy_recvï¼ŒçœŸæ­£æŽ¥åˆ°æ¶ˆæ¯è¯·æ±‚åŽï¼Œåœ¨proxy_recvä¸­æŒ‚è½½çœŸæ­£çš„æ¶ˆæ¯æŽ¥æ”¶ã€å‘ç”Ÿå‡½æ•°ï¼ˆconn_getå‡½æ•°ä¸­ï¼‰ï¼›  è¯·æ±‚çš„åˆ†å‘åœ¨æ¶ˆæ¯æŽ¥æ”¶å‡½æ•°ä¸­ï¼Œæœ‰ä¸ªserver_pool_serverå‡½æ•°ï¼Œåœ¨ä¸€ä¸ªserver poolä¸­é€‰æ‹©ä¸€ä¸ªserveræ¥åˆ†å‘ï¼Œæ ¸å¿ƒçš„è·¯ç”±æœºåˆ¶å¾ˆå¯èƒ½ä¼šåœ¨è¿™é‡Œä¿®æ”¹ã€‚
+
+
