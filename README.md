@@ -46,8 +46,8 @@ conf_add_server():delim[]，修改delim[] = “ :::”，然后在对delim的循
 ![Huntaway结构图](https://github.com/spacetiller629/huntaway/blob/master/images/Huntaway1-%E7%BB%93%E6%9E%84.png)
 
 ## 组模型示意图
-[组模型示意图](https://github.com/spacetiller629/huntaway/blob/master/images/Huntaway2-%E7%BB%84%E6%A8%A1%E5%9E%8B.png)
+![组模型示意图](https://github.com/spacetiller629/huntaway/blob/master/images/Huntaway2-%E7%BB%84%E6%A8%A1%E5%9E%8B.png)
 
 ## 另附：Nutcracker实体关系图
-[Nutcracker实体关系图](https://github.com/spacetiller629/huntaway/blob/master/images/Nutcracker%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%9B%BE.png)
+![Nutcracker实体关系图](https://github.com/spacetiller629/huntaway/blob/master/images/Nutcracker%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%9B%BE.png)
 
