@@ -43,7 +43,7 @@ conf_add_server():delim[]，修改delim[] = “ :::”，然后在对delim的循
 >	分发过程：NC初始化之后，先在接收事件挂载proxy_recv，真正接到消息请求后，在proxy_recv中挂载真正的消息接收、发生函数（conn_get函数中）；  请求的分发在消息接收函数中，有个server_pool_server函数，在一个server pool中选择一个server来分发，核心的路由机制很可能会在这里修改。
 
 ## Huntaway结构图
-[Huntaway结构图](https://github.com/spacetiller629/huntaway/blob/master/images/Huntaway1-%E7%BB%93%E6%9E%84.png)
+![Huntaway结构图](https://github.com/spacetiller629/huntaway/blob/master/images/Huntaway1-%E7%BB%93%E6%9E%84.png)
 
 ## 组模型示意图
 [组模型示意图](https://github.com/spacetiller629/huntaway/blob/master/images/Huntaway2-%E7%BB%84%E6%A8%A1%E5%9E%8B.png)
