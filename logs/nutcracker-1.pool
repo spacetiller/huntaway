@@ -1,0 +1,1370 @@
+[Tue Jan  7 11:00:53 2014] nc.c:177 nutcracker-0.2.4 started on pid 24067
+[Tue Jan  7 11:00:53 2014] nc.c:181 run, rabbit run / dig that hole, forget the sun / and when at last the work is done / don't sit down / it's time to dig another one haha 
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1813 --------gooooooooooot role ----- p: |m| role: |m| rolelen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1824 --------gooooooooooot group  ----- p: |1:1:m| group: |1:1:m| grouplen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1835 -------- port ----- p: |3:1|1:1:m| port: |8603:1|1:1:m| 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1813 --------gooooooooooot role ----- p: |n| role: |n| rolelen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1824 --------gooooooooooot group  ----- p: |1:1:n| group: |1:1:n| grouplen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1835 -------- port ----- p: |4:1|1:1:n| port: |8604:1|1:1:n| 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1813 --------gooooooooooot role ----- p: |m| role: |m| rolelen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1824 --------gooooooooooot group  ----- p: |2:1:m| group: |2:1:m| grouplen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1835 -------- port ----- p: |5:1|2:1:m| port: |8605:1|2:1:m| 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1813 --------gooooooooooot role ----- p: |n| role: |n| rolelen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1824 --------gooooooooooot group  ----- p: |2:1:n| group: |2:1:n| grouplen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1835 -------- port ----- p: |6:1|2:1:n| port: |8606:1|2:1:n| 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1813 --------gooooooooooot role ----- p: |n| role: |n| rolelen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1824 --------gooooooooooot group  ----- p: |1:1:n| group: |1:1:n| grouplen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1835 -------- port ----- p: |4:1|1:1:n| port: |8604:1|1:1:n| 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1813 --------gooooooooooot role ----- p: |s| role: |s| rolelen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1824 --------gooooooooooot group  ----- p: |1:1:s| group: |1:1:s| grouplen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1835 -------- port ----- p: |3:1|1:1:s| port: |8613:1|1:1:s| 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1813 --------gooooooooooot role ----- p: |s| role: |s| rolelen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1824 --------gooooooooooot group  ----- p: |1:1:s| group: |1:1:s| grouplen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1835 -------- port ----- p: |4:1|1:1:s| port: |8614:1|1:1:s| 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1813 --------gooooooooooot role ----- p: |n| role: |n| rolelen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1824 --------gooooooooooot group  ----- p: |2:1:n| group: |2:1:n| grouplen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1835 -------- port ----- p: |5:1|2:1:n| port: |8605:1|2:1:n| 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1813 --------gooooooooooot role ----- p: |s| role: |s| rolelen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1824 --------gooooooooooot group  ----- p: |2:1:s| group: |2:1:s| grouplen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1835 -------- port ----- p: |5:1|2:1:s| port: |8615:1|2:1:s| 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1813 --------gooooooooooot role ----- p: |s| role: |s| rolelen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1824 --------gooooooooooot group  ----- p: |2:1:s| group: |2:1:s| grouplen: 1 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1835 -------- port ----- p: |6:1|2:1:s| port: |8616:1|2:1:s| 
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:1480 ---------conf pool elem: 2
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:267 --------- set server 10.0.2.70:8604:1|1:1:n-10.0.2.70:8604, port 8604
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:267 --------- set server 10.0.2.70:8613:1|1:1:s-10.0.2.70:8613, port 8613
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:267 --------- set server 10.0.2.70:8614:1|1:1:s-10.0.2.70:8614, port 8614
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:267 --------- set server 10.0.2.70:8605:1|2:1:n-10.0.2.70:8605, port 8605
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:267 --------- set server 10.0.2.70:8615:1|2:1:s-10.0.2.70:8615, port 8615
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:267 --------- set server 10.0.2.70:8616:1|2:1:s-10.0.2.70:8616, port 8616
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:267 --------- set server 10.0.2.70:8603:1|1:1:m-10.0.2.70:8603, port 8603
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:267 --------- set server 10.0.2.70:8604:1|1:1:n-10.0.2.70:8604, port 8604
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:267 --------- set server 10.0.2.70:8605:1|2:1:m-10.0.2.70:8605, port 8605
+
+[Tue Jan  7 11:00:53 2014] nc_conf.c:267 --------- set server 10.0.2.70:8606:1|2:1:n-10.0.2.70:8606, port 8606
+
+[Tue Jan  7 11:00:53 2014] nc_server.c:924 ------ dist type: 0 
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 13044200
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 42996456
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 45412902
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 49965754
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 70759936
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 89283103
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 108745026
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 110888383
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 143579899
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 151150547
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 166681128
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 173147667
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 183221520
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 192971382
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 194489888
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 209848148
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 222481807
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 226159803
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 244648634
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 246936898
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 265933706
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 290253884
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 295541979
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 313573530
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 336187763
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 340968554
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 377860977
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 378250381
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 405938191
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 433882395
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 461187097
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 471224766
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 482751484
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 488406241
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 507616317
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 514389085
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 523388325
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 526618670
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 537767656
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 541496970
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 570758927
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 576515376
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 586040038
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 586451415
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 619512166
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 640433149
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 666872457
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 667905015
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 672135561
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 680831388
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 683576150
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 712109142
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 724328191
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 725728189
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 729040424
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 732547007
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 733863887
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 763637164
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 765185822
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 779142574
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 783638126
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 804371453
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 834404347
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 854973788
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 871757240
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 889545487
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 894870699
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 898166821
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 915388137
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 922511723
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 931878823
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 948678964
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 972510160
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 994186969
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1005500546
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1013618748
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1022650997
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1030193921
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1042978901
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1067248627
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1072844269
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1135164337
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1146113982
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1157905893
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1196566818
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1249440450
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1259488008
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1264333229
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1265766208
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1273102475
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1286275685
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1299698019
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1302080763
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1305021161
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1317525935
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1341246211
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1366948266
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1368724186
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1372966931
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1378621908
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1380899824
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1391820574
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1396712106
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1403242008
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1435350439
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1438132213
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1454819136
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1460376362
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1483949003
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1496707368
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1530244486
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1541613672
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1555586379
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1558157322
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1574238046
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1581101622
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1633761940
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1640644062
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1682064189
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1703381575
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1703586605
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1729337279
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1748310892
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1748903125
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1751290023
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1760573188
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1765636190
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1774216866
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1778523302
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1786022295
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1799585842
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1813717753
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1815693025
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1817738947
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1852789953
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1865044996
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1868742410
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1868927755
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1877555637
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1898534952
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1904095729
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1961509671
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1971867424
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 1989174055
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 1994172193
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2009229560
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2037129988
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2100868653
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2126938626
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2127633807
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2142269596
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2153011988
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2175096642
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2180967560
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2186838536
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2193062377
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2206695779
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2208764958
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2226454767
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2232166015
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2254518516
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2265953086
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2288422612
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2293679936
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2301389150
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2360279122
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2374300758
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2380663847
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2391695024
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2401107460
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2404562232
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2411089184
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2438069471
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2465671375
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2479587729
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2498966019
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2528918466
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2549101591
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2578819914
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2589661356
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2610079532
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2637713958
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2639833669
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2646407165
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2668754772
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2698194875
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2747625059
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2771513692
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2785463649
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2799221350
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2806415369
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2813097655
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2813530214
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2813631458
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2846090186
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2850316361
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2876600134
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2895602831
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2917007249
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2919578899
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2922537570
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2948819687
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2958110598
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2960166871
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2961472769
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 2964761230
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2974150497
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2978550747
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 2978689079
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3029513137
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3030300402
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3031171029
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3049438587
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3070933664
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3078934572
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3085460943
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3098627123
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3110316268
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3115796303
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3119235835
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3140956689
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3150502646
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3158381689
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3162959800
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3179374103
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3194338131
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3198462899
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3215119208
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3232778015
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3234461742
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3238739833
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3242607733
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3245165237
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3295995062
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3307217315
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3316204193
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3316678734
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3324241683
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3325933993
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3352242769
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3357313697
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3361647791
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3366227604
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3366318970
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3378373362
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3413741007
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3417195086
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3422932403
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3427968876
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3443335550
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3459051645
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3507992809
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3511692141
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3532064999
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3557296737
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3558215736
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3560010521
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3585099786
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3591957996
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3601989090
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3604010612
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3612177931
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3621506353
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3640504705
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3649218150
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3651660257
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3651854782
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3677669836
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3678596073
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3683700201
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3697308782
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3764809348
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3767617220
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3770393363
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3792223511
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3798843943
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3806335059
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3826218619
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3840953761
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3851865044
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3860884370
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3862373526
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3872320505
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3872363123
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3872633172
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3872713803
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3876362692
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3930305320
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3943220276
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3967591427
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3972693432
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3975202450
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3977797043
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 3983208442
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3988144923
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 3997870746
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4045316001
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4063518727
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4077621729
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4078749040
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4105421877
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 4107318325
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4117728467
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4148478610
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4152279614
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4154945702
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4155537437
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4170279150
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4174193768
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 4202905246
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4221150287
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 4222583846
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 4233895134
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 4242608093
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 4245450464
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 4247975505
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 0    value: 4260504898
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4260737418
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 0    continuum index: 1    value: 4269122990
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:229 updated pool 0 'beta' with 2 of 2 groups live in 12 slots and 320 active points in 3520 slots
+[Tue Jan  7 11:00:53 2014] nc_server.c:924 ------ dist type: 0 
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 13044200
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 31272462
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 40325527
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 42996456
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 85336723
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 90320556
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 99383125
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 107492388
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 110888383
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 174283785
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 185222943
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 204470753
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 208426798
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 222481807
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 223874707
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 243681984
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 244648634
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 275209285
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 290253884
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 295541979
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 304078077
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 368275834
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 377860977
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 381405362
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 385771832
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 401788318
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 405938191
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 430063062
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 433882395
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 448987997
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 460778867
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 461187097
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 482751484
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 490933482
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 507616317
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 509907230
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 523388325
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 537767656
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 541496970
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 557057825
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 570725779
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 570758927
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 576515376
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 586040038
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 586451415
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 590493956
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 591080334
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 595727811
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 619512166
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 620101018
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 628751488
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 628879447
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 640433149
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 672096628
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 672135561
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 680831388
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 683576150
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 725728189
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 763637164
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 765185822
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 784022985
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 798058365
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 802633926
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 802728899
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 804371453
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 834404347
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 847392846
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 863511175
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 870991996
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 871757240
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 890201231
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 894870699
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 896484045
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 898166821
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 915388137
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 922511723
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 922526517
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 924206204
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 938847591
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 947112443
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 948678964
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 949571872
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 972510160
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 994186969
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1005500546
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1006234231
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1013594455
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1022650997
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1030193921
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1072844269
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1085977779
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1108531517
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1121367506
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1157905893
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1159396612
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1180189677
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1231294361
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1247511528
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1278015712
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1299698019
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1302080763
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1305021161
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1307277043
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1313044640
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1317525935
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1335769899
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1341246211
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1372966931
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1376593873
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1378621908
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1396712106
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1403242008
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1431688898
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1438132213
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1454819136
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1454998405
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1460376362
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1485549550
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1495655546
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1496707368
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1556255093
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1558157322
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1564053969
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1574238046
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1581101622
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1588251007
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1640644062
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1674382347
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1682064189
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1692623873
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1703000947
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1703381575
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1703586605
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1729337279
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1748903125
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1751290023
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1759981165
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1760573188
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1765636190
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1778523302
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1799585842
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1813717753
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1825213926
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1842135860
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1852789953
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1865044996
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1868927755
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1898534952
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1920780457
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1975885726
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 1985861446
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 1989174055
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2002505743
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2009229560
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2012424383
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2021088720
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2037129988
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2044065577
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2081761144
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2094707524
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2100868653
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2127633807
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2129787143
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2152067372
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2169591080
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2175096642
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2189568776
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2193062377
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2206695779
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2217327075
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2218662296
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2226454767
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2232166015
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2233303741
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2243679877
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2259924176
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2293679936
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2301389150
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2374300758
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2385240993
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2388537467
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2391695024
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2396203400
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2443678810
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2498966019
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2537715671
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2589661356
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2608046096
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2611614381
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2619866962
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2639833669
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2646407165
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2710229402
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2715622541
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2723332848
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2788342908
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2807710064
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2813097655
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2813631458
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2827794893
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2837006767
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2906970256
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2912202942
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2919578899
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2960166871
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2961472769
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2965719449
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2974150497
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2976107300
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2978550747
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 2978689079
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2986990771
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 2987354423
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3029513137
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3078934572
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3082655113
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3097061707
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3098134347
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3106909388
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3110316268
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3119235835
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3150502646
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3162959800
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3179374103
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3180771293
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3184286460
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3194338131
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3195790035
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3213119432
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3219800358
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3234461742
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3234493442
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3238739833
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3245165237
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3262009029
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3270564480
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3275483234
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3295995062
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3302992211
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3325933993
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3357313697
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3361647791
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3378373362
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3383709607
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3390977087
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3406039174
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3413741007
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3427968876
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3439380102
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3442636146
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3443335550
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3449683415
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3459051645
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3461660906
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3502961350
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3507992809
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3532064999
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3560010521
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3586603393
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3596270216
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3601989090
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3602398911
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3604010612
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3612177931
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3649218150
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3651854782
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3662830082
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3678596073
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3683672089
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3683700201
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3688028591
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3690709791
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3699772749
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3709405410
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3710555977
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3739934364
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3764809348
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3767617220
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3792223511
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3826218619
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3872320505
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3872633172
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3872713803
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3876362692
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3882382471
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3905009441
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3908675909
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3930305320
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3932029407
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3939355791
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3943220276
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3967591427
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3975202450
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3977797043
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3978329589
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 3983208442
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 3993522289
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 4037226507
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4045316001
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4063518727
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4077621729
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4078749040
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4105421877
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 4114854348
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4117728467
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4148478610
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4152279614
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4154945702
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4155537437
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 4167566790
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4170279150
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 4173948352
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4174193768
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 4210159123
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4221150287
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 4233037325
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4260737418
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 1    value: 4269122990
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:215 pool 1    continuum index: 0    value: 4283963564
+
+[Tue Jan  7 11:00:53 2014] nc_ketama.c:229 updated pool 1 'alpha' with 2 of 2 groups live in 12 slots and 320 active points in 3520 slots
+[Tue Jan  7 11:00:53 2014] nc_stats.c:1035 m 4 listening on '0.0.0.0:22222'
+[Tue Jan  7 11:00:53 2014] nc_proxy.c:207 p 7 listening on '127.0.0.1:22122' in redis pool 0 'beta' with 2 groups
+[Tue Jan  7 11:00:53 2014] nc_proxy.c:207 p 8 listening on '127.0.0.1:22121' in redis pool 1 'alpha' with 2 groups
+[Tue Jan  7 11:01:35 2014] nc_signal.c:122 signal 2 (SIGINT) received, exiting

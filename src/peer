@@ -1,0 +1,290 @@
+nc_client.c:        ASSERT(msg->peer == NULL);
+nc_client.c:        ASSERT(msg->request && !msg->done);
+nc_client.c:                  "%"PRIu32" type %d", conn->sd, msg->id, msg->mlen,
+nc_client.c:                  msg->type);
+nc_client.c:        if (msg->done) {
+nc_client.c:                      msg->error ? "error": "completed", msg->id, msg->mlen,
+nc_client.c:                      msg->type);
+nc_client.c:            msg->swallow = 1;
+nc_client.c:            ASSERT(msg->request);
+nc_client.c:            ASSERT(msg->peer == NULL);
+nc_client.c:                      "len %"PRIu32" type %d", conn->sd, msg->id, msg->mlen,
+nc_client.c:                      msg->type);
+Binary file nc_client.o matches
+nc_core.c:        if (msg->error || msg->done) {
+nc_core.c:        conn = msg->tmo_rbe.data;
+nc_core.c:        then = msg->tmo_rbe.key;
+nc_core.c:        log_debug(LOG_INFO, "req %"PRIu64" on s %d timedout", msg->id, conn->sd);
+nc_message.c:    ASSERT(msg->request);
+nc_message.c:    ASSERT(!msg->quit && !msg->noreply);
+nc_message.c:    node = &msg->tmo_rbe;
+nc_message.c:              "%d msec", msg->id, timeout);
+nc_message.c:    node = &msg->tmo_rbe;
+nc_message.c:    log_debug(LOG_VERB, "delete msg %"PRIu64" from tmo rbt", msg->id);
+nc_message.c:    msg->id = ++msg_id;
+nc_message.c:    msg->peer = NULL;
+nc_message.c:    msg->owner = NULL;
+nc_message.c:    rbtree_node_init(&msg->tmo_rbe);
+nc_message.c:    STAILQ_INIT(&msg->mhdr);
+nc_message.c:    msg->mlen = 0;
+nc_message.c:    msg->state = 0;
+nc_message.c:    msg->pos = NULL;
+nc_message.c:    msg->token = NULL;
+nc_message.c:    msg->parser = NULL;
+nc_message.c:    msg->result = MSG_PARSE_OK;
+nc_message.c:    msg->pre_splitcopy = NULL;
+nc_message.c:    msg->post_splitcopy = NULL;
+nc_message.c:    msg->pre_coalesce = NULL;
+nc_message.c:    msg->post_coalesce = NULL;
+nc_message.c:    msg->type = MSG_UNKNOWN;
+nc_message.c:    msg->key_start = NULL;
+nc_message.c:    msg->key_end = NULL;
+nc_message.c:    msg->vlen = 0;
+nc_message.c:    msg->end = NULL;
+nc_message.c:    msg->frag_owner = NULL;
+nc_message.c:    msg->nfrag = 0;
+nc_message.c:    msg->frag_id = 0;
+nc_message.c:    msg->narg_start = NULL;
+nc_message.c:    msg->narg_end = NULL;
+nc_message.c:    msg->narg = 0;
+nc_message.c:    msg->rnarg = 0;
+nc_message.c:    msg->rlen = 0;
+nc_message.c:    msg->integer = 0;
+nc_message.c:    array_init(&msg->peers, NC_MSG_DEFAULT_NPEERS, sizeof(struct msg));
+nc_message.c:    msg->err = 0;
+nc_message.c:    msg->error = 0;
+nc_message.c:    msg->ferror = 0;
+nc_message.c:    msg->request = 0;
+nc_message.c:    msg->quit = 0;
+nc_message.c:    msg->noreply = 0;
+nc_message.c:    msg->done = 0;
+nc_message.c:    msg->fdone = 0;
+nc_message.c:    msg->first_fragment = 0;
+nc_message.c:    msg->last_fragment = 0;
+nc_message.c:    msg->swallow = 0;
+nc_message.c:    msg->redis = 0;
+nc_message.c:    msg->owner = conn;
+nc_message.c:    msg->request = request ? 1 : 0;
+nc_message.c:    msg->redis = redis ? 1 : 0;
+nc_message.c:            msg->parser = redis_parse_req;
+nc_message.c:            msg->parser = redis_parse_rsp;
+nc_message.c:        msg->pre_splitcopy = redis_pre_splitcopy;
+nc_message.c:        msg->post_splitcopy = redis_post_splitcopy;
+nc_message.c:        msg->pre_coalesce = redis_pre_coalesce;
+nc_message.c:        msg->post_coalesce = redis_post_coalesce;
+nc_message.c:            msg->parser = memcache_parse_req;
+nc_message.c:            msg->parser = memcache_parse_rsp;
+nc_message.c:        msg->pre_splitcopy = memcache_pre_splitcopy;
+nc_message.c:        msg->post_splitcopy = memcache_post_splitcopy;
+nc_message.c:        msg->pre_coalesce = memcache_pre_coalesce;
+nc_message.c:        msg->post_coalesce = memcache_post_coalesce;
+nc_message.c:              msg, msg->id, msg->request, conn->sd);
+nc_message.c:    msg->state = 0;
+nc_message.c:    msg->type = MSG_RSP_MC_SERVER_ERROR;
+nc_message.c:    mbuf_insert(&msg->mhdr, mbuf);
+nc_message.c:    msg->mlen = (uint32_t)n;
+nc_message.c:              msg, msg->id, msg->mlen, errstr);
+nc_message.c:    ASSERT(STAILQ_EMPTY(&msg->mhdr));
+nc_message.c:    log_debug(LOG_VVERB, "free msg %p id %"PRIu64"", msg, msg->id);
+nc_message.c:    log_debug(LOG_VVERB, "put msg %p id %"PRIu64"", msg, msg->id);
+nc_message.c:    while (!STAILQ_EMPTY(&msg->mhdr)) {
+nc_message.c:        struct mbuf *mbuf = STAILQ_FIRST(&msg->mhdr);
+nc_message.c:        mbuf_remove(&msg->mhdr, mbuf);
+nc_message.c:         "error %d (err %d)", msg->id, msg->request, msg->mlen, msg->type,
+nc_message.c:         msg->done, msg->error, msg->err);
+nc_message.c:    STAILQ_FOREACH(mbuf, &msg->mhdr, next) {
+nc_message.c:    return msg->mlen == 0 ? true : false;
+nc_message.c:    mbuf = STAILQ_LAST(&msg->mhdr, mbuf, next);
+nc_message.c:    if (msg->pos == mbuf->last) {
+nc_message.c:    nbuf = mbuf_split(&msg->mhdr, msg->pos, NULL, NULL);
+nc_message.c:    nmsg = msg_get(msg->owner, msg->request, conn->redis);
+nc_message.c:    mbuf_insert(&nmsg->mhdr, nbuf);
+nc_message.c:    nmsg->pos = nbuf->pos;
+nc_message.c:    nmsg->mlen = mbuf_length(nbuf);
+nc_message.c:    msg->mlen -= nmsg->mlen;
+nc_message.c:    ASSERT(msg->request);
+nc_message.c:    nbuf = mbuf_split(&msg->mhdr, msg->pos, msg->pre_splitcopy, msg);
+nc_message.c:    status = msg->post_splitcopy(msg);
+nc_message.c:    nmsg = msg_get(msg->owner, msg->request, msg->redis);
+nc_message.c:    mbuf_insert(&nmsg->mhdr, nbuf);
+nc_message.c:    nmsg->pos = nbuf->pos;
+nc_message.c:    nmsg->mlen = mbuf_length(nbuf);
+nc_message.c:    msg->mlen -= nmsg->mlen;
+nc_message.c:    if (msg->frag_id == 0) {
+nc_message.c:        msg->frag_id = ++frag_id;
+nc_message.c:        msg->first_fragment = 1;
+nc_message.c:        msg->nfrag = 1;
+nc_message.c:        msg->frag_owner = msg;
+nc_message.c:    nmsg->frag_id = msg->frag_id;
+nc_message.c:    msg->last_fragment = 0;
+nc_message.c:    nmsg->last_fragment = 1;
+nc_message.c:    nmsg->frag_owner = msg->frag_owner;
+nc_message.c:    msg->frag_owner->nfrag++;
+nc_message.c:              "%"PRIu64"", msg->id, nmsg->id, msg->frag_id);
+nc_message.c:    nbuf = mbuf_split(&msg->mhdr, msg->pos, NULL, NULL);
+nc_message.c:    mbuf_insert(&msg->mhdr, nbuf);
+nc_message.c:    msg->pos = nbuf->pos;
+nc_message.c:    msg->parser(msg);
+nc_message.c:    switch (msg->result) {
+nc_message.c:    mbuf = STAILQ_LAST(&msg->mhdr, mbuf, next);
+nc_message.c:        mbuf_insert(&msg->mhdr, mbuf);
+nc_message.c:        msg->pos = mbuf->pos;
+nc_message.c:    msg->mlen += (uint32_t)n;
+nc_message.c:        for (mbuf = STAILQ_FIRST(&msg->mhdr);
+nc_message.c:            if (msg->mlen == 0) {
+nc_message.c:        for (mbuf = STAILQ_FIRST(&msg->mhdr); mbuf != NULL; mbuf = nbuf) {
+Binary file nc_message.o matches
+nc_request.c:    ASSERT(msg->request);
+nc_request.c:    pmsg = msg->peer;
+nc_request.c:        ASSERT(!pmsg->request && pmsg->peer == msg);
+nc_request.c:        msg->peer = NULL;
+nc_request.c:        pmsg->peer = NULL;
+nc_request.c:    ASSERT(msg->request);
+nc_request.c:    if (!msg->done) {
+nc_request.c:    id = msg->frag_id;
+nc_request.c:    if (msg->fdone) {
+nc_request.c:         cmsg != NULL && cmsg->frag_id == id;
+nc_request.c:        if (!cmsg->done) {
+nc_request.c:         cmsg != NULL && cmsg->frag_id == id;
+nc_request.c:        if (!cmsg->done) {
+nc_request.c:    if (!pmsg->last_fragment) {
+nc_request.c:    msg->fdone = 1;
+nc_request.c:         cmsg != NULL && cmsg->frag_id == id;
+nc_request.c:        cmsg->fdone = 1;
+nc_request.c:         cmsg != NULL && cmsg->frag_id == id;
+nc_request.c:        cmsg->fdone = 1;
+nc_request.c:    ASSERT(msg->frag_owner->nfrag == nfragment);
+nc_request.c:    msg->post_coalesce(msg->frag_owner);
+nc_request.c:    ASSERT(msg->request && req_done(conn, msg));
+nc_request.c:    if (msg->error) {
+nc_request.c:    id = msg->frag_id;
+nc_request.c:    if (msg->ferror) {
+nc_request.c:         cmsg != NULL && cmsg->frag_id == id;
+nc_request.c:        if (cmsg->error) {
+nc_request.c:         cmsg != NULL && cmsg->frag_id == id;
+nc_request.c:        if (cmsg->error) {
+nc_request.c:    msg->ferror = 1;
+nc_request.c:         cmsg != NULL && cmsg->frag_id == id;
+nc_request.c:        cmsg->ferror = 1;
+nc_request.c:         cmsg != NULL && cmsg->frag_id == id;
+nc_request.c:        cmsg->ferror = 1;
+nc_request.c:    ASSERT(msg->request);
+nc_request.c:    if (!msg->noreply) {
+nc_request.c:    stats_server_incr_by(ctx, conn->owner, in_queue_bytes, msg->mlen);
+nc_request.c:    ASSERT(msg->request);
+nc_request.c:    stats_server_decr_by(ctx, conn->owner, in_queue_bytes, msg->mlen);
+nc_request.c:    ASSERT(msg->request);
+nc_request.c:    ASSERT(msg->request);
+nc_request.c:    stats_server_incr_by(ctx, conn->owner, out_queue_bytes, msg->mlen);
+nc_request.c:    ASSERT(msg->request);
+nc_request.c:    ASSERT(msg->request);
+nc_request.c:    stats_server_decr_by(ctx, conn->owner, out_queue_bytes, msg->mlen);
+nc_request.c:            ASSERT(msg->peer == NULL);
+nc_request.c:            ASSERT(msg->request && !msg->done);
+nc_request.c:                      "%"PRIu32"", conn->sd, msg->id, msg->mlen);
+nc_request.c:        ASSERT(msg->request);
+nc_request.c:        log_debug(LOG_VERB, "filter empty req %"PRIu64" from c %d", msg->id,
+nc_request.c:    if (msg->quit) {
+nc_request.c:        log_debug(LOG_INFO, "filter quit req %"PRIu64" from c %d", msg->id,
+nc_request.c:              "c %d failed: %s", msg->id, msg->mlen, msg->type, conn->sd,
+nc_request.c:    msg->done = 1;
+nc_request.c:    msg->error = 1;
+nc_request.c:    msg->err = errno;
+nc_request.c:    if (msg->noreply) {
+nc_request.c:    ASSERT(msg->request);
+nc_request.c:    stats_server_incr_by(ctx, server, request_bytes, msg->mlen);
+nc_request.c:    if (!msg->noreply) {
+nc_request.c:        tag_start = nc_strchr(msg->key_start, msg->key_end, tag->data[0]);
+nc_request.c:            tag_end = nc_strchr(tag_start + 1, msg->key_end, tag->data[1]);
+nc_request.c:        key = msg->key_start;
+nc_request.c:        keylen = (uint32_t)(msg->key_end - msg->key_start);
+nc_request.c:                  " type %d with key '%.*s'", c_conn->sd, s_conn->sd, msg->id,
+nc_request.c:                  msg->mlen, msg->type, keylen, key);
+nc_request.c:              " type %d with key '%.*s'", c_conn->sd, s_conn->sd, msg->id,
+nc_request.c:              msg->mlen, msg->type, keylen, key);
+nc_request.c:    ASSERT(msg->request);
+nc_request.c:    ASSERT(msg->owner == conn);
+nc_request.c:    ASSERT(nmsg == NULL || nmsg->request);
+nc_request.c:        ASSERT(msg->request && !msg->done);
+nc_request.c:    ASSERT(nmsg->request && !nmsg->done);
+nc_request.c:              "s %d", nmsg->id, nmsg->mlen, nmsg->type, conn->sd);
+nc_request.c:    ASSERT(msg->request && !msg->done);
+nc_request.c:    ASSERT(msg->owner != conn);
+nc_request.c:              "s %d", msg->id, msg->mlen, msg->type, conn->sd);
+nc_request.c:    if (!msg->noreply) {
+Binary file nc_request.o matches
+nc_response.c:    ASSERT(!msg->request);
+nc_response.c:    ASSERT(msg->peer == NULL);
+nc_response.c:    ASSERT(msg->request && req_error(conn, msg));
+nc_response.c:    ASSERT(msg->owner == conn);
+nc_response.c:    id = msg->frag_id;
+nc_response.c:             cmsg != NULL && cmsg->frag_id == id;
+nc_response.c:            if (err == 0 && cmsg->err != 0) {
+nc_response.c:                err = cmsg->err;
+nc_response.c:        err = msg->err;
+nc_response.c:    pmsg = msg->peer;
+nc_response.c:        ASSERT(!pmsg->request && pmsg->peer == msg);
+nc_response.c:        msg->peer = NULL;
+nc_response.c:        pmsg->peer = NULL;
+nc_response.c:            ASSERT(msg->peer == NULL);
+nc_response.c:            ASSERT(!msg->request);
+nc_response.c:                      "%"PRIu32"", conn->sd, msg->id, msg->mlen);
+nc_response.c:        ASSERT(!msg->request);
+nc_response.c:        log_debug(LOG_VERB, "filter empty rsp %"PRIu64" on s %d", msg->id,
+nc_response.c:        log_error("filter stray rsp %"PRIu64" len %"PRIu32" on s %d", msg->id,
+nc_response.c:                  msg->mlen, conn->sd);
+nc_response.c:    ASSERT(pmsg->peer == NULL);
+nc_response.c:    ASSERT(pmsg->request && !pmsg->done);
+nc_response.c:    if (pmsg->swallow) {
+nc_response.c:        pmsg->done = 1;
+nc_response.c:                  "%"PRIu64" on s %d", msg->id, msg->mlen, pmsg->id,
+nc_response.c:    ASSERT(!msg->request);
+nc_response.c:    stats_server_incr_by(ctx, server, response_bytes, msg->mlen);
+nc_response.c:    ASSERT(pmsg != NULL && pmsg->peer == NULL);
+nc_response.c:    ASSERT(pmsg->request && !pmsg->done);
+nc_response.c:    pmsg->done = 1;
+nc_response.c:    pmsg->peer = msg;
+nc_response.c:    msg->peer = pmsg;
+nc_response.c:    msg->pre_coalesce(msg);
+nc_response.c:    c_conn = pmsg->owner;
+nc_response.c:    ASSERT(!msg->request);
+nc_response.c:    ASSERT(msg->owner == conn);
+nc_response.c:    ASSERT(nmsg == NULL || !nmsg->request);
+nc_response.c:        ASSERT(!msg->request && msg->peer != NULL);
+nc_response.c:        ASSERT(req_done(conn, msg->peer));
+nc_response.c:        pmsg = TAILQ_NEXT(msg->peer, c_tqe);
+nc_response.c:    ASSERT(pmsg->request && !pmsg->swallow);
+nc_response.c:        msg->peer = pmsg;
+nc_response.c:        pmsg->peer = msg;
+nc_response.c:        msg = pmsg->peer;
+nc_response.c:    ASSERT(!msg->request);
+nc_response.c:    log_debug(LOG_VVERB, "send next rsp %"PRIu64" on c %d", msg->id, conn->sd);
+nc_response.c:    log_debug(LOG_VVERB, "send done rsp %"PRIu64" on c %d", msg->id, conn->sd);
+nc_response.c:    pmsg = msg->peer;
+nc_response.c:    ASSERT(!msg->request && pmsg->request);
+nc_response.c:    ASSERT(pmsg->peer == msg);
+nc_response.c:    ASSERT(pmsg->done && !pmsg->swallow);
+Binary file nc_response.o matches
+nc_server.c:        if (msg->swallow || msg->noreply) {
+nc_server.c:                      " type %d", conn->sd, msg->id, msg->mlen, msg->type);
+nc_server.c:            c_conn = msg->owner;
+nc_server.c:            msg->done = 1;
+nc_server.c:            msg->error = 1;
+nc_server.c:            msg->err = conn->err;
+nc_server.c:                event_add_out(ctx->ep, msg->owner);
+nc_server.c:                      "len %"PRIu32" type %d from c %d%c %s", conn->sd, msg->id,
+nc_server.c:                      msg->mlen, msg->type, c_conn->sd, conn->err ? ':' : ' ',
+nc_server.c:        if (msg->swallow) {
+nc_server.c:                      " type %d", conn->sd, msg->id, msg->mlen, msg->type);
+nc_server.c:            c_conn = msg->owner;
+nc_server.c:            msg->done = 1;
+nc_server.c:            msg->error = 1;
+nc_server.c:            msg->err = conn->err;
+nc_server.c:                event_add_out(ctx->ep, msg->owner);
+nc_server.c:                      "len %"PRIu32" type %d from c %d%c %s", conn->sd, msg->id,
+nc_server.c:                      msg->mlen, msg->type, c_conn->sd, conn->err ? ':' : ' ',
+nc_server.c:        ASSERT(!msg->request);
+nc_server.c:        ASSERT(msg->peer == NULL);
+nc_server.c:                  "in error", conn->sd, msg->id, msg->mlen);
+Binary file nc_server.o matches
+Binary file nutcracker matches

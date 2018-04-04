@@ -1,0 +1,17 @@
+alpha:
+  listen: 127.0.0.1:22121
+  hash: fnv1a_64
+  distribution: ketama
+  auto_eject_hosts: true
+  redis: true
+  server_retry_timeout: 2000
+  server_failure_limit: 1
+  servers:
+   - 10.0.2.70:8603:1|1:1:m
+   - 10.0.2.70:8604:1|1:1:n
+   - 10.0.2.70:8613:1|1:1:s
+   - 10.0.2.70:8614:1|1:1:s
+   - 10.0.2.70:8605:1|2:1:m
+   - 10.0.2.70:8606:1|2:1:n
+   - 10.0.2.70:8615:1|2:1:s
+   - 10.0.2.70:8616:1|2:1:s

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/prcp/!svn/ver/57/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src/Makefile.in
+END
+yaml_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src/yaml_private.h
+END
+reader.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src/reader.c
+END
+loader.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src/loader.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src/Makefile.am
+END
+api.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src/api.c
+END
+emitter.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src/emitter.c
+END
+scanner.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src/scanner.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/prcp/!svn/ver/57/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src/Makefile
+END
+dumper.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src/dumper.c
+END
+parser.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src/parser.c
+END
+writer.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/contrib/yaml-0.1.4/src/writer.c
+END

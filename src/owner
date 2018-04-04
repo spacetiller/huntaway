@@ -1,0 +1,459 @@
+nc_client.c:    ASSERT(conn->client && !conn->proxy);
+nc_client.c:    ASSERT(conn->owner == NULL);
+nc_client.c:    conn->family = 0;
+nc_client.c:    conn->addrlen = 0;
+nc_client.c:    conn->addr = NULL;
+nc_client.c:    conn->owner = owner;
+nc_client.c:    ASSERT(conn->client && !conn->proxy);
+nc_client.c:    ASSERT(conn->owner != NULL);
+nc_client.c:    pool = conn->owner;
+nc_client.c:    conn->owner = NULL;
+nc_client.c:    ASSERT(conn->client && !conn->proxy);
+nc_client.c:    ASSERT(TAILQ_EMPTY(&conn->imsg_q));
+nc_client.c:    if (!TAILQ_EMPTY(&conn->omsg_q)) {
+nc_client.c:        log_debug(LOG_VVERB, "c %d is active", conn->sd);
+nc_client.c:    if (conn->rmsg != NULL) {
+nc_client.c:        log_debug(LOG_VVERB, "c %d is active", conn->sd);
+nc_client.c:    if (conn->smsg != NULL) {
+nc_client.c:        log_debug(LOG_VVERB, "c %d is active", conn->sd);
+nc_client.c:    log_debug(LOG_VVERB, "c %d is inactive", conn->sd);
+nc_client.c:    ASSERT(conn->client && !conn->proxy);
+nc_client.c:    client_close_stats(ctx, conn->owner, conn->err, conn->eof);
+nc_client.c:    if (conn->sd < 0) {
+nc_client.c:        conn->unref(conn);
+nc_client.c:    msg = conn->rmsg;
+nc_client.c:        conn->rmsg = NULL;
+nc_client.c:                  "%"PRIu32" type %d", conn->sd, msg->id, msg->mlen,
+nc_client.c:    ASSERT(conn->smsg == NULL);
+nc_client.c:    ASSERT(TAILQ_EMPTY(&conn->imsg_q));
+nc_client.c:    for (msg = TAILQ_FIRST(&conn->omsg_q); msg != NULL; msg = nmsg) {
+nc_client.c:        conn->dequeue_outq(ctx, conn, msg);
+nc_client.c:                      "%"PRIu32" type %d", conn->sd,
+nc_client.c:                      "len %"PRIu32" type %d", conn->sd, msg->id, msg->mlen,
+nc_client.c:    ASSERT(TAILQ_EMPTY(&conn->omsg_q));
+nc_client.c:    conn->unref(conn);
+nc_client.c:    status = close(conn->sd);
+nc_client.c:        log_error("close c %d failed, ignored: %s", conn->sd, strerror(errno));
+nc_client.c:    conn->sd = -1;
+Binary file nc_client.o matches
+nc_connection.c:    conn->owner = NULL;
+nc_connection.c:    conn->sd = -1;
+nc_connection.c:    TAILQ_INIT(&conn->imsg_q);
+nc_connection.c:    TAILQ_INIT(&conn->omsg_q);
+nc_connection.c:    conn->rmsg = NULL;
+nc_connection.c:    conn->smsg = NULL;
+nc_connection.c:    conn->send_bytes = 0;
+nc_connection.c:    conn->recv_bytes = 0;
+nc_connection.c:    conn->events = 0;
+nc_connection.c:    conn->err = 0;
+nc_connection.c:    conn->recv_active = 0;
+nc_connection.c:    conn->recv_ready = 0;
+nc_connection.c:    conn->send_active = 0;
+nc_connection.c:    conn->send_ready = 0;
+nc_connection.c:    conn->client = 0;
+nc_connection.c:    conn->proxy = 0;
+nc_connection.c:    conn->connecting = 0;
+nc_connection.c:    conn->connected = 0;
+nc_connection.c:    conn->eof = 0;
+nc_connection.c:    conn->done = 0;
+nc_connection.c:    conn->redis = 0;
+nc_connection.c:    conn->redis = redis ? 1 : 0;
+nc_connection.c:    conn->client = client ? 1 : 0;
+nc_connection.c:    if (conn->client) {
+nc_connection.c:        conn->recv = msg_recv;
+nc_connection.c:        conn->recv_next = req_recv_next;
+nc_connection.c:        conn->recv_done = req_recv_done;
+nc_connection.c:        conn->send = msg_send;
+nc_connection.c:        conn->send_next = rsp_send_next;
+nc_connection.c:        conn->send_done = rsp_send_done;
+nc_connection.c:        conn->close = client_close;
+nc_connection.c:        conn->active = client_active;
+nc_connection.c:        conn->ref = client_ref;
+nc_connection.c:        conn->unref = client_unref;
+nc_connection.c:        conn->enqueue_inq = NULL;
+nc_connection.c:        conn->dequeue_inq = NULL;
+nc_connection.c:        conn->enqueue_outq = req_client_enqueue_omsgq;
+nc_connection.c:        conn->dequeue_outq = req_client_dequeue_omsgq;
+nc_connection.c:        conn->recv = msg_recv;
+nc_connection.c:        conn->recv_next = rsp_recv_next;
+nc_connection.c:        conn->recv_done = rsp_recv_done;
+nc_connection.c:        conn->send = msg_send;
+nc_connection.c:        conn->send_next = req_send_next;
+nc_connection.c:        conn->send_done = req_send_done;
+nc_connection.c:        conn->close = server_close;
+nc_connection.c:        conn->active = server_active;
+nc_connection.c:        conn->ref = server_ref;
+nc_connection.c:        conn->unref = server_unref;
+nc_connection.c:        conn->enqueue_inq = req_server_enqueue_imsgq;
+nc_connection.c:        conn->dequeue_inq = req_server_dequeue_imsgq;
+nc_connection.c:        conn->enqueue_outq = req_server_enqueue_omsgq;
+nc_connection.c:        conn->dequeue_outq = req_server_dequeue_omsgq;
+nc_connection.c:    conn->ref(conn, owner);
+nc_connection.c:    log_debug(LOG_VVERB, "get conn %p client %d", conn, conn->client);
+nc_connection.c:    conn->redis = pool->redis;
+nc_connection.c:    conn->proxy = 1;
+nc_connection.c:    conn->recv = proxy_recv;
+nc_connection.c:    conn->recv_next = NULL;
+nc_connection.c:    conn->recv_done = NULL;
+nc_connection.c:    conn->send = NULL;
+nc_connection.c:    conn->send_next = NULL;
+nc_connection.c:    conn->send_done = NULL;
+nc_connection.c:    conn->close = proxy_close;
+nc_connection.c:    conn->active = NULL;
+nc_connection.c:    conn->ref = proxy_ref;
+nc_connection.c:    conn->unref = proxy_unref;
+nc_connection.c:    conn->enqueue_inq = NULL;
+nc_connection.c:    conn->dequeue_inq = NULL;
+nc_connection.c:    conn->enqueue_outq = NULL;
+nc_connection.c:    conn->dequeue_outq = NULL;
+nc_connection.c:    conn->ref(conn, owner);
+nc_connection.c:    log_debug(LOG_VVERB, "get conn %p proxy %d", conn, conn->proxy);
+nc_connection.c:    ASSERT(conn->sd < 0);
+nc_connection.c:    ASSERT(conn->owner == NULL);
+nc_connection.c:    ASSERT(conn->recv_ready);
+nc_connection.c:        n = nc_read(conn->sd, buf, size);
+nc_connection.c:        log_debug(LOG_VERB, "recv on sd %d %zd of %zu", conn->sd, n, size);
+nc_connection.c:                conn->recv_ready = 0;
+nc_connection.c:            conn->recv_bytes += (size_t)n;
+nc_connection.c:            conn->recv_ready = 0;
+nc_connection.c:            conn->eof = 1;
+nc_connection.c:            log_debug(LOG_INFO, "recv on sd %d eof rb %zu sb %zu", conn->sd,
+nc_connection.c:                      conn->recv_bytes, conn->send_bytes);
+nc_connection.c:            log_debug(LOG_VERB, "recv on sd %d not ready - eintr", conn->sd);
+nc_connection.c:            conn->recv_ready = 0;
+nc_connection.c:            log_debug(LOG_VERB, "recv on sd %d not ready - eagain", conn->sd);
+nc_connection.c:            conn->recv_ready = 0;
+nc_connection.c:            conn->err = errno;
+nc_connection.c:            log_error("recv on sd %d failed: %s", conn->sd, strerror(errno));
+nc_connection.c:    ASSERT(conn->send_ready);
+nc_connection.c:        n = nc_writev(conn->sd, sendv->elem, sendv->nelem);
+nc_connection.c:                  conn->sd, n, nsend, sendv->nelem);
+nc_connection.c:                conn->send_ready = 0;
+nc_connection.c:            conn->send_bytes += (size_t)n;
+nc_connection.c:            log_warn("sendv on sd %d returned zero", conn->sd);
+nc_connection.c:            conn->send_ready = 0;
+nc_connection.c:            log_debug(LOG_VERB, "sendv on sd %d not ready - eintr", conn->sd);
+nc_connection.c:            conn->send_ready = 0;
+nc_connection.c:            log_debug(LOG_VERB, "sendv on sd %d not ready - eagain", conn->sd);
+nc_connection.c:            conn->send_ready = 0;
+nc_connection.c:            conn->err = errno;
+nc_connection.c:            log_error("sendv on sd %d failed: %s", conn->sd, strerror(errno));
+Binary file nc_connection.o matches
+nc_core.c:    status = conn->recv(ctx, conn);
+nc_core.c:                  conn->client ? 'c' : (conn->proxy ? 'p' : 's'), conn->sd,
+nc_core.c:    status = conn->send(ctx, conn);
+nc_core.c:                  conn->client ? 'c' : (conn->proxy ? 'p' : 's'), conn->sd,
+nc_core.c:    ASSERT(conn->sd > 0);
+nc_core.c:    if (conn->client) {
+nc_core.c:        addrstr = nc_unresolve_peer_desc(conn->sd);
+nc_core.c:        type = conn->proxy ? 'p' : 's';
+nc_core.c:        addrstr = nc_unresolve_addr(conn->addr, conn->addrlen);
+nc_core.c:              "%d rb %zu sb %zu%c %s", type, conn->sd, addrstr, conn->events,
+nc_core.c:              conn->eof, conn->done, conn->recv_bytes, conn->send_bytes,
+nc_core.c:              conn->err ? ':' : ' ', conn->err ? strerror(conn->err) : "");
+nc_core.c:                 type, conn->sd, strerror(errno));
+nc_core.c:    conn->close(ctx, conn);
+nc_core.c:    char type = conn->client ? 'c' : (conn->proxy ? 'p' : 's');
+nc_core.c:    status = nc_get_soerror(conn->sd);
+nc_core.c:        log_warn("get soerr on %c %d failed, ignored: %s", type, conn->sd,
+nc_core.c:    conn->err = errno;
+nc_core.c:        log_debug(LOG_INFO, "req %"PRIu64" on s %d timedout", msg->id, conn->sd);
+nc_core.c:        conn->err = ETIMEDOUT;
+nc_core.c:              conn->client ? 'c' : (conn->proxy ? 'p' : 's'), conn->sd);
+nc_core.c:    conn->events = events;
+nc_core.c:        if (status != NC_OK || conn->done || conn->err) {
+nc_core.c:        if (status != NC_OK || conn->done || conn->err) {
+Binary file nc_core.o matches
+nc_message.c:              msg, msg->id, msg->request, conn->sd);
+nc_message.c:        conn->recv_done(ctx, conn, msg, NULL);
+nc_message.c:    nmsg = msg_get(msg->owner, msg->request, conn->redis);
+nc_message.c:    conn->recv_done(ctx, conn, msg, nmsg);
+nc_message.c:    ASSERT(conn->client && !conn->proxy);
+nc_message.c:    stats_pool_incr(ctx, conn->owner, fragments);
+nc_message.c:    conn->recv_done(ctx, conn, msg, nmsg);
+nc_message.c:        conn->recv_done(ctx, conn, msg, NULL);
+nc_message.c:        conn->err = errno;
+nc_message.c:    return conn->err != 0 ? NC_ERROR : status;
+nc_message.c:        nmsg = conn->recv_next(ctx, conn, false);
+nc_message.c:    ASSERT(conn->recv_active);
+nc_message.c:    conn->recv_ready = 1;
+nc_message.c:        msg = conn->recv_next(ctx, conn, true);
+nc_message.c:    } while (conn->recv_ready);
+nc_message.c:        ASSERT(conn->smsg == msg);
+nc_message.c:        msg = conn->send_next(ctx, conn);
+nc_message.c:    conn->smsg = NULL;
+nc_message.c:                conn->send_done(ctx, conn, msg);
+nc_message.c:            conn->send_done(ctx, conn, msg);
+nc_message.c:    ASSERT(conn->send_active);
+nc_message.c:    conn->send_ready = 1;
+nc_message.c:        msg = conn->send_next(ctx, conn);
+nc_message.c:    } while (conn->send_ready);
+Binary file nc_message.o matches
+nc_proxy.c:    ASSERT(!conn->client && conn->proxy);
+nc_proxy.c:    ASSERT(conn->owner == NULL);
+nc_proxy.c:    conn->family = pool->family;
+nc_proxy.c:    conn->addrlen = pool->addrlen;
+nc_proxy.c:    conn->addr = pool->addr;
+nc_proxy.c:    conn->owner = owner;
+nc_proxy.c:    ASSERT(!conn->client && conn->proxy);
+nc_proxy.c:    ASSERT(conn->owner != NULL);
+nc_proxy.c:    pool = conn->owner;
+nc_proxy.c:    conn->owner = NULL;
+nc_proxy.c:    ASSERT(!conn->client && conn->proxy);
+nc_proxy.c:    if (conn->sd < 0) {
+nc_proxy.c:        conn->unref(conn);
+nc_proxy.c:    ASSERT(conn->rmsg == NULL);
+nc_proxy.c:    ASSERT(conn->smsg == NULL);
+nc_proxy.c:    ASSERT(TAILQ_EMPTY(&conn->imsg_q));
+nc_proxy.c:    ASSERT(TAILQ_EMPTY(&conn->omsg_q));
+nc_proxy.c:    conn->unref(conn);
+nc_proxy.c:    status = close(conn->sd);
+nc_proxy.c:        log_error("close p %d failed, ignored: %s", conn->sd, strerror(errno));
+nc_proxy.c:    conn->sd = -1;
+nc_proxy.c:    ASSERT(conn->proxy && !conn->client);
+nc_proxy.c:    ASSERT(conn->recv_active);
+nc_proxy.c:    conn->recv_ready = 1;
+nc_proxy.c:    } while (conn->recv_ready);
+Binary file nc_proxy.o matches
+nc_request.c:    ASSERT(conn->client && !conn->proxy);
+nc_request.c:    msg = msg_get(conn, true, conn->redis);
+nc_request.c:        conn->err = errno;
+nc_request.c:    ASSERT(conn->client && !conn->proxy);
+nc_request.c:              "fragments is done", conn->sd, id, nfragment);
+nc_request.c:              "fragments is in error", conn->sd, id, nfragment);
+nc_request.c:    ASSERT(!conn->client && !conn->proxy);
+nc_request.c:    TAILQ_INSERT_TAIL(&conn->imsg_q, msg, s_tqe);
+nc_request.c:    stats_server_incr(ctx, conn->owner, in_queue);
+nc_request.c:    stats_server_incr_by(ctx, conn->owner, in_queue_bytes, msg->mlen);
+nc_request.c:    ASSERT(!conn->client && !conn->proxy);
+nc_request.c:    TAILQ_REMOVE(&conn->imsg_q, msg, s_tqe);
+nc_request.c:    stats_server_decr(ctx, conn->owner, in_queue);
+nc_request.c:    stats_server_decr_by(ctx, conn->owner, in_queue_bytes, msg->mlen);
+nc_request.c:    ASSERT(conn->client && !conn->proxy);
+nc_request.c:    TAILQ_INSERT_TAIL(&conn->omsg_q, msg, c_tqe);
+nc_request.c:    ASSERT(!conn->client && !conn->proxy);
+nc_request.c:    TAILQ_INSERT_TAIL(&conn->omsg_q, msg, s_tqe);
+nc_request.c:    stats_server_incr(ctx, conn->owner, out_queue);
+nc_request.c:    stats_server_incr_by(ctx, conn->owner, out_queue_bytes, msg->mlen);
+nc_request.c:    ASSERT(conn->client && !conn->proxy);
+nc_request.c:    TAILQ_REMOVE(&conn->omsg_q, msg, c_tqe);
+nc_request.c:    ASSERT(!conn->client && !conn->proxy);
+nc_request.c:    TAILQ_REMOVE(&conn->omsg_q, msg, s_tqe);
+nc_request.c:    stats_server_decr(ctx, conn->owner, out_queue);
+nc_request.c:    stats_server_decr_by(ctx, conn->owner, out_queue_bytes, msg->mlen);
+nc_request.c:    ASSERT(conn->client && !conn->proxy);
+nc_request.c:    if (conn->eof) {
+nc_request.c:        msg = conn->rmsg;
+nc_request.c:            conn->rmsg = NULL;
+nc_request.c:                      "%"PRIu32"", conn->sd, msg->id, msg->mlen);
+nc_request.c:        if (!conn->active(conn)) {
+nc_request.c:            conn->done = 1;
+nc_request.c:            log_debug(LOG_INFO, "c %d is done", conn->sd);
+nc_request.c:    msg = conn->rmsg;
+nc_request.c:        conn->rmsg = msg;
+nc_request.c:    ASSERT(conn->client && !conn->proxy);
+nc_request.c:        ASSERT(conn->rmsg == NULL);
+nc_request.c:                  conn->sd);
+nc_request.c:        ASSERT(conn->rmsg == NULL);
+nc_request.c:                  conn->sd);
+nc_request.c:        conn->eof = 1;
+nc_request.c:        conn->recv_ready = 0;
+nc_request.c:    ASSERT(conn->client && !conn->proxy);
+nc_request.c:              "c %d failed: %s", msg->id, msg->mlen, msg->type, conn->sd,
+nc_request.c:    if (req_done(conn, TAILQ_FIRST(&conn->omsg_q))) {
+nc_request.c:            conn->err = errno;
+nc_request.c:    ASSERT(c_conn->client && !c_conn->proxy);
+nc_request.c:        c_conn->enqueue_outq(ctx, c_conn, msg);
+nc_request.c:    pool = c_conn->owner;
+nc_request.c:    /*s_conn = server_pool_conn(ctx, c_conn->owner, key, keylen);*/
+nc_request.c:    s_conns = server_pool_conns(ctx, c_conn->owner, key, keylen);
+nc_request.c:        ASSERT(!s_conn->client && !s_conn->proxy);
+nc_request.c:        if (TAILQ_EMPTY(&s_conn->imsg_q)) {
+nc_request.c:                s_conn->err = errno;
+nc_request.c:        s_conn->enqueue_inq(ctx, s_conn, msg);
+nc_request.c:        req_forward_stats(ctx, s_conn->owner, msg);
+nc_request.c:                  " type %d with key '%.*s'", c_conn->sd, s_conn->sd, msg->id,
+nc_request.c:              " type %d with key '%.*s'", c_conn->sd, s_conn->sd, msg->id,
+nc_request.c:    ASSERT(conn->client && !conn->proxy);
+nc_request.c:    ASSERT(conn->rmsg == msg);
+nc_request.c:    conn->rmsg = nmsg;
+nc_request.c:    ASSERT(!conn->client && !conn->proxy);
+nc_request.c:    if (conn->connecting) {
+nc_request.c:    nmsg = TAILQ_FIRST(&conn->imsg_q);
+nc_request.c:            conn->err = errno;
+nc_request.c:    msg = conn->smsg;
+nc_request.c:    conn->smsg = nmsg;
+nc_request.c:              "s %d", nmsg->id, nmsg->mlen, nmsg->type, conn->sd);
+nc_request.c:    ASSERT(!conn->client && !conn->proxy);
+nc_request.c:    ASSERT(msg != NULL && conn->smsg == NULL);
+nc_request.c:              "s %d", msg->id, msg->mlen, msg->type, conn->sd);
+nc_request.c:    conn->dequeue_inq(ctx, conn, msg);
+nc_request.c:        conn->enqueue_outq(ctx, conn, msg);
+Binary file nc_request.o matches
+nc_response.c:    ASSERT(!conn->client && !conn->proxy);
+nc_response.c:    msg = msg_get(conn, false, conn->redis);
+nc_response.c:        conn->err = errno;
+nc_response.c:    ASSERT(conn->client && !conn->proxy);
+nc_response.c:            conn->dequeue_outq(ctx, conn, cmsg);
+nc_response.c:    return msg_get_error(conn->redis, err);
+nc_response.c:    ASSERT(!conn->client && !conn->proxy);
+nc_response.c:    ASSERT(!conn->connecting);
+nc_response.c:    if (conn->eof) {
+nc_response.c:        msg = conn->rmsg;
+nc_response.c:            conn->rmsg = NULL;
+nc_response.c:                      "%"PRIu32"", conn->sd, msg->id, msg->mlen);
+nc_response.c:        conn->done = 1;
+nc_response.c:        log_error("s %d active %d is done", conn->sd, conn->active(conn));
+nc_response.c:    msg = conn->rmsg;
+nc_response.c:        conn->rmsg = msg;
+nc_response.c:    ASSERT(!conn->client && !conn->proxy);
+nc_response.c:        ASSERT(conn->rmsg == NULL);
+nc_response.c:                  conn->sd);
+nc_response.c:    pmsg = TAILQ_FIRST(&conn->omsg_q);
+nc_response.c:                  msg->mlen, conn->sd);
+nc_response.c:        conn->err = errno;
+nc_response.c:        conn->dequeue_outq(ctx, conn, pmsg);
+nc_response.c:                  conn->sd);
+nc_response.c:    ASSERT(!s_conn->client && !s_conn->proxy);
+nc_response.c:    pmsg = TAILQ_FIRST(&s_conn->omsg_q);
+nc_response.c:    s_conn->dequeue_outq(ctx, s_conn, pmsg);
+nc_response.c:    ASSERT(c_conn->client && !c_conn->proxy);
+nc_response.c:    if (req_done(c_conn, TAILQ_FIRST(&c_conn->omsg_q))) {
+nc_response.c:            c_conn->err = errno;
+nc_response.c:    rsp_forward_stats(ctx, s_conn->owner, msg);
+nc_response.c:    ASSERT(!conn->client && !conn->proxy);
+nc_response.c:    ASSERT(msg != NULL && conn->rmsg == msg);
+nc_response.c:    conn->rmsg = nmsg;
+nc_response.c:    ASSERT(conn->client && !conn->proxy);
+nc_response.c:    pmsg = TAILQ_FIRST(&conn->omsg_q);
+nc_response.c:        if (pmsg == NULL && conn->eof) {
+nc_response.c:            conn->done = 1;
+nc_response.c:            log_debug(LOG_INFO, "c %d is done", conn->sd);
+nc_response.c:            conn->err = errno;
+nc_response.c:    msg = conn->smsg;
+nc_response.c:        conn->smsg = NULL;
+nc_response.c:            conn->err = errno;
+nc_response.c:        stats_pool_incr(ctx, conn->owner, forward_error);
+nc_response.c:    conn->smsg = msg;
+nc_response.c:    log_debug(LOG_VVERB, "send next rsp %"PRIu64" on c %d", msg->id, conn->sd);
+nc_response.c:    ASSERT(conn->client && !conn->proxy);
+nc_response.c:    ASSERT(conn->smsg == NULL);
+nc_response.c:    log_debug(LOG_VVERB, "send done rsp %"PRIu64" on c %d", msg->id, conn->sd);
+nc_response.c:    conn->dequeue_outq(ctx, conn, pmsg);
+Binary file nc_response.o matches
+nc_server.c:    ASSERT(!conn->client && !conn->proxy);
+nc_server.c:    ASSERT(conn->owner == NULL);
+nc_server.c:    conn->family = server->family;
+nc_server.c:    conn->addrlen = server->addrlen;
+nc_server.c:    conn->addr = server->addr;
+nc_server.c:    conn->owner = owner;
+nc_server.c:    ASSERT(!conn->client && !conn->proxy);
+nc_server.c:    ASSERT(conn->owner != NULL);
+nc_server.c:    server = conn->owner;
+nc_server.c:    conn->owner = NULL;
+nc_server.c:    ASSERT(!conn->client && !conn->proxy);
+nc_server.c:    server = conn->owner;
+nc_server.c:    ASSERT(!conn->client && !conn->proxy);
+nc_server.c:    if (!TAILQ_EMPTY(&conn->imsg_q)) {
+nc_server.c:        log_debug(LOG_VVERB, "s %d is active", conn->sd);
+nc_server.c:    if (!TAILQ_EMPTY(&conn->omsg_q)) {
+nc_server.c:        log_debug(LOG_VVERB, "s %d is active", conn->sd);
+nc_server.c:    if (conn->rmsg != NULL) {
+nc_server.c:        log_debug(LOG_VVERB, "s %d is active", conn->sd);
+nc_server.c:    if (conn->smsg != NULL) {
+nc_server.c:        log_debug(LOG_VVERB, "s %d is active", conn->sd);
+nc_server.c:    log_debug(LOG_VVERB, "s %d is inactive", conn->sd);
+nc_server.c:    ASSERT(!conn->client && !conn->proxy);
+nc_server.c:        conn->close(pool->ctx, conn);
+nc_server.c:    ASSERT(!conn->client && !conn->proxy);
+nc_server.c:    server_close_stats(ctx, conn->owner, conn->err, conn->eof,
+nc_server.c:                       conn->connected);
+nc_server.c:    if (conn->sd < 0) {
+nc_server.c:        server_failure(ctx, conn->owner);
+nc_server.c:        conn->unref(conn);
+nc_server.c:    for (msg = TAILQ_FIRST(&conn->imsg_q); msg != NULL; msg = nmsg) {
+nc_server.c:        conn->dequeue_inq(ctx, conn, msg);
+nc_server.c:                      " type %d", conn->sd, msg->id, msg->mlen, msg->type);
+nc_server.c:            ASSERT(c_conn->client && !c_conn->proxy);
+nc_server.c:            msg->err = conn->err;
+nc_server.c:            if (req_done(c_conn, TAILQ_FIRST(&c_conn->omsg_q))) {
+nc_server.c:                      "len %"PRIu32" type %d from c %d%c %s", conn->sd, msg->id,
+nc_server.c:                      msg->mlen, msg->type, c_conn->sd, conn->err ? ':' : ' ',
+nc_server.c:                      conn->err ? strerror(conn->err): " ");
+nc_server.c:    ASSERT(TAILQ_EMPTY(&conn->imsg_q));
+nc_server.c:    for (msg = TAILQ_FIRST(&conn->omsg_q); msg != NULL; msg = nmsg) {
+nc_server.c:        conn->dequeue_outq(ctx, conn, msg);
+nc_server.c:                      " type %d", conn->sd, msg->id, msg->mlen, msg->type);
+nc_server.c:            ASSERT(c_conn->client && !c_conn->proxy);
+nc_server.c:            msg->err = conn->err;
+nc_server.c:            if (req_done(c_conn, TAILQ_FIRST(&c_conn->omsg_q))) {
+nc_server.c:                      "len %"PRIu32" type %d from c %d%c %s", conn->sd, msg->id,
+nc_server.c:                      msg->mlen, msg->type, c_conn->sd, conn->err ? ':' : ' ',
+nc_server.c:                      conn->err ? strerror(conn->err): " ");
+nc_server.c:    ASSERT(TAILQ_EMPTY(&conn->omsg_q));
+nc_server.c:    msg = conn->rmsg;
+nc_server.c:        conn->rmsg = NULL;
+nc_server.c:                  "in error", conn->sd, msg->id, msg->mlen);
+nc_server.c:    ASSERT(conn->smsg == NULL);
+nc_server.c:    server_failure(ctx, conn->owner);
+nc_server.c:    conn->unref(conn);
+nc_server.c:    status = close(conn->sd);
+nc_server.c:        log_error("close s %d failed, ignored: %s", conn->sd, strerror(errno));
+nc_server.c:    conn->sd = -1;
+nc_server.c:    ASSERT(!conn->client && !conn->proxy);
+nc_server.c:    if (conn->sd > 0) {
+nc_server.c:    conn->sd = socket(conn->family, SOCK_STREAM, 0);
+nc_server.c:    if (conn->sd < 0) {
+nc_server.c:    status = nc_set_nonblocking(conn->sd);
+nc_server.c:                  conn->sd,  server->pname.len, server->pname.data,
+nc_server.c:        status = nc_set_tcpnodelay(conn->sd);
+nc_server.c:                     conn->sd, server->pname.len, server->pname.data,
+nc_server.c:                  ctx->ep, conn->sd, server->pname.len, server->pname.data,
+nc_server.c:    ASSERT(!conn->connecting && !conn->connected);
+nc_server.c:    status = connect(conn->sd, conn->addr, conn->addrlen);
+nc_server.c:            conn->connecting = 1;
+nc_server.c:                      conn->sd, server->pname.len, server->pname.data);
+nc_server.c:        log_error("connect on s %d to server '%.*s' failed: %s", conn->sd,
+nc_server.c:    ASSERT(!conn->connecting);
+nc_server.c:    conn->connected = 1;
+nc_server.c:    log_debug(LOG_INFO, "connected on s %d to server '%.*s'", conn->sd,
+nc_server.c:    conn->err = errno;
+nc_server.c:    struct server *server = conn->owner;
+nc_server.c:    ASSERT(!conn->client && !conn->proxy);
+nc_server.c:    ASSERT(conn->connecting && !conn->connected);
+nc_server.c:    conn->connecting = 0;
+nc_server.c:    conn->connected = 1;
+nc_server.c:    log_debug(LOG_INFO, "connected on s %d to server '%.*s'", conn->sd,
+nc_server.c:    struct server *server = conn->owner;
+nc_server.c:    ASSERT(!conn->client && !conn->proxy);
+nc_server.c:    ASSERT(conn->connected);
+Binary file nc_server.o matches
+Binary file nutcracker matches
+peer:nc_client.c:                  "%"PRIu32" type %d", conn->sd, msg->id, msg->mlen,
+peer:nc_client.c:                      "len %"PRIu32" type %d", conn->sd, msg->id, msg->mlen,
+peer:nc_core.c:        log_debug(LOG_INFO, "req %"PRIu64" on s %d timedout", msg->id, conn->sd);
+peer:nc_message.c:              msg, msg->id, msg->request, conn->sd);
+peer:nc_message.c:    nmsg = msg_get(msg->owner, msg->request, conn->redis);
+peer:nc_request.c:    stats_server_incr_by(ctx, conn->owner, in_queue_bytes, msg->mlen);
+peer:nc_request.c:    stats_server_decr_by(ctx, conn->owner, in_queue_bytes, msg->mlen);
+peer:nc_request.c:    stats_server_incr_by(ctx, conn->owner, out_queue_bytes, msg->mlen);
+peer:nc_request.c:    stats_server_decr_by(ctx, conn->owner, out_queue_bytes, msg->mlen);
+peer:nc_request.c:                      "%"PRIu32"", conn->sd, msg->id, msg->mlen);
+peer:nc_request.c:              "c %d failed: %s", msg->id, msg->mlen, msg->type, conn->sd,
+peer:nc_request.c:                  " type %d with key '%.*s'", c_conn->sd, s_conn->sd, msg->id,
+peer:nc_request.c:              " type %d with key '%.*s'", c_conn->sd, s_conn->sd, msg->id,
+peer:nc_request.c:              "s %d", nmsg->id, nmsg->mlen, nmsg->type, conn->sd);
+peer:nc_request.c:              "s %d", msg->id, msg->mlen, msg->type, conn->sd);
+peer:nc_response.c:                      "%"PRIu32"", conn->sd, msg->id, msg->mlen);
+peer:nc_response.c:                  msg->mlen, conn->sd);
+peer:nc_response.c:    log_debug(LOG_VVERB, "send next rsp %"PRIu64" on c %d", msg->id, conn->sd);
+peer:nc_response.c:    log_debug(LOG_VVERB, "send done rsp %"PRIu64" on c %d", msg->id, conn->sd);
+peer:nc_server.c:                      " type %d", conn->sd, msg->id, msg->mlen, msg->type);
+peer:nc_server.c:            msg->err = conn->err;
+peer:nc_server.c:                      "len %"PRIu32" type %d from c %d%c %s", conn->sd, msg->id,
+peer:nc_server.c:                      msg->mlen, msg->type, c_conn->sd, conn->err ? ':' : ' ',
+peer:nc_server.c:                      " type %d", conn->sd, msg->id, msg->mlen, msg->type);
+peer:nc_server.c:            msg->err = conn->err;
+peer:nc_server.c:                      "len %"PRIu32" type %d from c %d%c %s", conn->sd, msg->id,
+peer:nc_server.c:                      msg->mlen, msg->type, c_conn->sd, conn->err ? ':' : ' ',
+peer:nc_server.c:                  "in error", conn->sd, msg->id, msg->mlen);

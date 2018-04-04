@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/prcp/!svn/ver/57/huntaway/branch/nutcracker-0.2.4/src/hashkit
+END
+nc_crc16.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/nc_crc16.c
+END
+nc_random.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/nc_random.c
+END
+nc_modula.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/nc_modula.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/Makefile.in
+END
+nc_one_at_a_time.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/nc_one_at_a_time.c
+END
+nc_md5.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/nc_md5.c
+END
+nc_murmur.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/nc_murmur.c
+END
+nc_fnv.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/nc_fnv.c
+END
+nc_hsieh.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/nc_hsieh.c
+END
+nc_hashkit.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/nc_hashkit.h
+END
+nc_jenkins.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/nc_jenkins.c
+END
+nc_ketama.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/nc_ketama.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/Makefile.am
+END
+nc_crc32.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/hashkit/nc_crc32.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/prcp/!svn/ver/57/huntaway/branch/nutcracker-0.2.4/src/hashkit/Makefile
+END

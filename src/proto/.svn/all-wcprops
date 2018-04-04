@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/prcp/!svn/ver/59/huntaway/branch/nutcracker-0.2.4/src/proto
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/proto/Makefile.in
+END
+nc_memcache.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/proto/nc_memcache.c
+END
+nc_redis.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/prcp/!svn/ver/60/huntaway/branch/nutcracker-0.2.4/src/proto/nc_redis.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/proto/Makefile.am
+END
+nc_proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/prcp/!svn/ver/56/huntaway/branch/nutcracker-0.2.4/src/proto/nc_proto.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/prcp/!svn/ver/57/huntaway/branch/nutcracker-0.2.4/src/proto/Makefile
+END
