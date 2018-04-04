@@ -1,8 +1,8 @@
 # Huntaway (Warining: Stop maintenance. Only for tutorial.)
-A twemproxy edition for redis cluster, revised on Twemproxy v2.4.0. Extensions include RW seperation, Hot/Cold data, and failover, etc.
-这是2013年做的一个Twemproxy改版，为了实现redis集群，当时3.0还没出来，初步实现了Redis的集群功能，
+A nutcracker edition for redis cluster, revised on Twemproxy v2.4.0. Extensions include RW seperation, Hot/Cold data, and failover, etc.
+这是2013年做的一个Nutcracker改版，为了实现redis集群，当时3.0还没出来，初步实现了Redis的集群功能，
 
-Twemproxy 又称 nutcracker ，是一个memcache、redis协议的轻量级代理，一个用于sharding 的中间件。有了Twemproxy，客户端不直接访问Redis服务器，而是通过twemproxy 代理中间件间接访问。 twemproxy 为 twitter 开源产品, 目前版本可以查看 [这里]()
+Nutcracker 又称 Twemproxy ，是一个memcache、redis协议的轻量级代理，一个用于sharding 的中间件。有了Twemproxy，客户端不直接访问Redis服务器，而是通过Twemproxy 代理中间件间接访问。 Twemproxy 为 twitter 开源产品, 目前版本可以查看 [这里](https://github.com/twitter/twemproxy)
 
 Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。 它支持多种类型的数据结构，如 字符串（strings）， 散列（hashes）， 列表（lists）， 集合（sets）， 有序集合（sorted sets） 与范围查询， bitmaps， hyperloglogs 和 地理空间（geospatial） 索引半径查询。 Redis 内置了 复制（replication），LUA脚本（Lua scripting）， LRU驱动事件（LRU eviction），事务（transactions） 和不同级别的 磁盘持久化（persistence）， 并通过 Redis哨兵（Sentinel）和自动 分区（Cluster）提供高可用性（high availability）。
 
@@ -42,4 +42,12 @@ conf_add_server():delim[]，修改delim[] = “ :::”，然后在对delim的循
 
 >	分发过程：NC初始化之后，先在接收事件挂载proxy_recv，真正接到消息请求后，在proxy_recv中挂载真正的消息接收、发生函数（conn_get函数中）；  请求的分发在消息接收函数中，有个server_pool_server函数，在一个server pool中选择一个server来分发，核心的路由机制很可能会在这里修改。
 
+## Huntaway结构图
+[Huntaway结构图](https://github.com/spacetiller629/huntaway/blob/master/images/Huntaway1-%E7%BB%93%E6%9E%84.png)
+
+## 组模型示意图
+[组模型示意图](https://github.com/spacetiller629/huntaway/blob/master/images/Huntaway2-%E7%BB%84%E6%A8%A1%E5%9E%8B.png)
+
+## 另附：Nutcracker实体关系图
+[Nutcracker实体关系图](https://github.com/spacetiller629/huntaway/blob/master/images/Nutcracker%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%9B%BE.png)
 
